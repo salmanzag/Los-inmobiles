@@ -97,26 +97,26 @@ Proyecto desarrollado por **Equipo HatoDato**
 
 ## Integrantes
 
-### Nombre Apellido
+### María Fernanda Rodríguez
 
 <img src="REEMPLAZAR_URL_FOTO_1" alt="Foto integrante" width="150" height="150">
 
 **Biografía:**
-(3–6 líneas sobre rol, experiencia y motivación.)
+Soy estudiante de ingeniería de sistemas de la universidad Pontificia Universidad Javeriana. Actualmente estoy en sexto semestre, enfocada en el mundo web y toda la parte de gestión TI. En mis tiempos libres me gusta leer y tocar guitarra
 
-### Nombre Apellido
+### Sebastián Mendez
 
 <img src="REEMPLAZAR_URL_FOTO_2" alt="Foto integrante" width="150" height="150">
 
 **Biografía:**
-(Texto.)
+Soy apasionado estudiante de Ingeniería de Sistemas de sexto semestre en la Pontificia Universidad Javeriana. Interesado en la ciberseguridad, en el manejo y organización de datos. En mis espacios libres me gusta jugar Vóleibol o jugar videojuegos
 
-### Nombre Apellido
+### Sebastián Almanza
 
 <img src="REEMPLAZAR_URL_FOTO_3" alt="Foto integrante" width="150" height="150">
 
 **Biografía:**
-(Texto.)
+Soy estudiante de ingeneria de sistemas de sexto semestre en la Pontificia Universidad Javeriana. Apacionado por la gestión de proyectos, el manejos de base de datos y el desarrollo web. Apasionado por el deporte y siempre aprender cosas nuevas.
 
 ## Licencia
 
