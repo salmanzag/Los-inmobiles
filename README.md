@@ -74,22 +74,23 @@ Aplicación móvil con módulos de: Gestión del Ganado, Conectividad y Comercia
 
 > Reemplaza las URLs por tus diagramas reales y ajusta tamaños para mantener consistencia.
 
-<img src="REEMPLAZAR_URL_DIAGRAMA_1" alt="Diagrama de clases" width="500" height="350">
-<img src="REEMPLAZAR_URL_DIAGRAMA_2" alt="Casos de uso" width="350" height="350">
+<img src="/doc/img/Canvas.jpg" alt="Canvas" width="500" height="350">
+<img src="/doc/img/casosDeUsos.jpg" alt="Casos de uso" width="350" height="350">
+<img src="/doc/img/diagramaCasosDeUsos.jpg" alt="Casos de uso" width="350" height="350">
 
 ## Mockups
 
 ### Pantalla Principal
 
-<img src="REEMPLAZAR_URL_MOCKUP_1" alt="Pantalla Principal" width="300" height="500">
+<img src="/doc/img/pantallaPrincipalHatoDato.png" alt="Pantalla Principal" width="300" height="500">
 
 ### Gestión del Ganado
 
-<img src="REEMPLAZAR_URL_MOCKUP_2" alt="Gestión del Ganado" width="300" height="500">
+<img src="/doc/img/gestionDelGanado.png" alt="Gestión del Ganado" width="300" height="500">
 
 ### Marketplace
 
-<img src="REEMPLAZAR_URL_MOCKUP_3" alt="Marketplace" width="300" height="500">
+<img src="/doc/img/marketplaceHatoDato.png" alt="Marketplace" width="300" height="500">
 
 ## Equipo
 
@@ -99,21 +100,21 @@ Proyecto desarrollado por **Equipo HatoDato**
 
 ### María Fernanda Rodríguez
 
-<img src="REEMPLAZAR_URL_FOTO_1" alt="Foto integrante" width="150" height="150">
+<img src="/doc/img/mafeRodriguez.jpg" alt="Mafe" width="150" >
 
 **Biografía:**
 Soy estudiante de ingeniería de sistemas de la universidad Pontificia Universidad Javeriana. Actualmente estoy en sexto semestre, enfocada en el mundo web y toda la parte de gestión TI. En mis tiempos libres me gusta leer y tocar guitarra
 
 ### Sebastián Mendez
 
-<img src="REEMPLAZAR_URL_FOTO_2" alt="Foto integrante" width="150" height="150">
+<img src="/doc/img/sebasMendez.jpg" alt="Sebas Mendez" width="150">
 
 **Biografía:**
 Soy apasionado estudiante de Ingeniería de Sistemas de sexto semestre en la Pontificia Universidad Javeriana. Interesado en la ciberseguridad, en el manejo y organización de datos. En mis espacios libres me gusta jugar Vóleibol o jugar videojuegos
 
 ### Sebastián Almanza
 
-<img src="REEMPLAZAR_URL_FOTO_3" alt="Foto integrante" width="150" height="150">
+<img src="/doc/img/sebasAlmanza.jpg" alt="Sebas Almanza" width="150">
 
 **Biografía:**
 Soy estudiante de ingeneria de sistemas de sexto semestre en la Pontificia Universidad Javeriana. Apacionado por la gestión de proyectos, el manejos de base de datos y el desarrollo web. Apasionado por el deporte y siempre aprender cosas nuevas.
