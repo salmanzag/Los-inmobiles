@@ -94,7 +94,7 @@ Aplicación móvil con módulos de: Gestión del Ganado, Conectividad y Comercia
 
 ## Equipo
 
-Proyecto desarrollado por **Equipo HatoDato**
+Proyecto desarrollado por **Equipo Los Inmobiles**
 
 ## Integrantes
 
