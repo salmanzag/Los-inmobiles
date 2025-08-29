@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- TOP APP BAR con back -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        app:navigationIcon="@drawable/ic_back"
+        app:title=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- CONTENIDO SCROLLABLE -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+
+            <!-- ==== CARD 1: CEBA ==== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_ceba"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="?attr/colorOutline"
+                app:strokeWidth="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Imagen de fondo -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bg_ceba"        <!-- tu foto -->
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/Shape.Rounded16"/>
+
+                    <!-- Scrim para contraste -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4D000000"/>
+
+                    <!-- Título centrado -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Ceba"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        style="@style/TextAppearance.Material3.HeadlineMedium"/>
+
+                    <!-- Botones abajo-izquierda -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_ceba_registrar"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:text="@string/registrar"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_ceba_lotes"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/lotes"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_ceba_salida"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/salida"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_ceba_analitica"
+                            style="@style/Btn.Small.Filled.Orange"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/analitica"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==== CARD 2: LEVANTE ==== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_levante"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="?attr/colorOutline"
+                app:strokeWidth="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bg_levante"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/Shape.Rounded16"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4D000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Levante"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        style="@style/TextAppearance.Material3.HeadlineMedium"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_levante_registrar"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:text="@string/registrar"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_levante_lotes"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/lotes"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_levante_analitica"
+                            style="@style/Btn.Small.Filled.Orange"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/analitica"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==== CARD 3: CRÍA ==== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_cria"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="?attr/colorOutline"
+                app:strokeWidth="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bg_cria"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/Shape.Rounded16"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4D000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Cria"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        style="@style/TextAppearance.Material3.HeadlineMedium"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cria_madre"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:text="@string/madre"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cria_nacimiento"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/nacimiento"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cria_lotes"
+                            style="@style/Btn.Small.Filled.Navy"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/lotes"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cria_analitica"
+                            style="@style/Btn.Small.Filled.Orange"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/analitica"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- BOTTOM NAV -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_nav"
+        app:itemIconTint="@color/nav_item_tint"
+        app:itemTextColor="@color/nav_item_tint"
+        app:menu="@menu/menu_bottom_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextAppearance.Material3.DisplaySmall"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="24dp"
+        android:shadowColor="#66000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:text="Mi Ganado"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HatoDato</string>
+    <string name="bienvenido_a_su_agro_app_amiga">¡BIENVENIDO A SU AGRO APP AMIGA!</string>
+    <string name="HATODATO">hatodato</string>
+    <string name="bienvenido">BIENVENIDO</string>
+    <string name="ingrese_el_tipo_de_usuario_que_desea">Ingrese el tipo de usuario que desea</string>
+    <string name="vendedor">Vendedor</string>
+    <string name="somos_hatodato">SOMOS HATODATO</string>
+    <string name="tu_mejor_compa_ero_con_bovinos">¡Tu mejor compañero con bovinos!</string>
+</resources>
