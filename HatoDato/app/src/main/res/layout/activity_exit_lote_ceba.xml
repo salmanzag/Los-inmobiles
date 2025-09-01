@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- CONTENIDO -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <FrameLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_header_rounded">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_back"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ceba"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:shadowColor="#66000000"
+                    android:shadowDx="0" android:shadowDy="3" android:shadowRadius="6"
+                    style="@style/TextAppearance.Material3.DisplaySmall"/>
+            </FrameLayout>
+
+            <!-- CTA superpuesta -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dar_salida"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/dar_salida_lote"
+                android:textColor="@android:color/white"
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/orange_HD"/>
+
+            <!-- ===== LOTE 1 ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/lote_1"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleLarge"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Cada cajita gris es CLICABLE -->
+                    <LinearLayout
+                        android:id="@+id/btn_peso_1"
+                        style="@style/Hato.InfoRowButton"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            style="@style/Hato.InfoRowLabel"
+                            android:text="@string/peso"/>
+
+                        <TextView
+                            style="@style/Hato.InfoRowValue"
+                            android:text="612 kg"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_edad_1"
+                        style="@style/Hato.InfoRowButton"
+                        android:layout_marginTop="8dp">
+
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/edad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="54 meses"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_cantidad_1"
+                        style="@style/Hato.InfoRowButton"
+                        android:layout_marginTop="8dp">
+
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/cantidad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="26 cabezas"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_fecha_1"
+                        style="@style/Hato.InfoRowButton"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/fecha_meta_embarque"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="Junio 2025"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== LOTE 2 ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/lote_2"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleLarge"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout android:id="@+id/btn_peso_2"     style="@style/Hato.InfoRowButton" android:layout_marginTop="4dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/peso"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="549 kg"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_edad_2"     style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/edad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="40 meses"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_cantidad_2" style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/cantidad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="32 cabezas"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_fecha_2"    style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp" android:layout_marginBottom="4dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/fecha_meta_embarque"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="Enero 2026"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== LOTE 3 ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/lote_3"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleLarge"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout android:id="@+id/btn_peso_3"     style="@style/Hato.InfoRowButton" android:layout_marginTop="4dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/peso"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="570 kg"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_edad_3"     style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/edad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="47 meses"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_cantidad_3" style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/cantidad"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="15 cabezas"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/btn_fecha_3"    style="@style/Hato.InfoRowButton" android:layout_marginTop="8dp" android:layout_marginBottom="4dp">
+                        <TextView style="@style/Hato.InfoRowLabel" android:text="@string/fecha_meta_embarque"/>
+                        <TextView style="@style/Hato.InfoRowValue" android:text="—"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_bottom_nav_top_rounded"
+        app:menu="@menu/menu_main"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- CONTENIDO SCROLL -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <FrameLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_header_rounded">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:tint="@android:color/white"
+                    android:contentDescription="@string/cd_back"
+                    app:srcCompat="@drawable/ic_back"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/salida_lote"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:shadowColor="#66000000"
+                    android:shadowDx="0" android:shadowDy="3" android:shadowRadius="6"
+                    style="@style/TextAppearance.Material3.DisplaySmall"/>
+            </FrameLayout>
+
+            <!-- Mensajes -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/salida_completada"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleMedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/resumen_de_lote"
+                android:gravity="center_horizontal"
+                style="@style/TextAppearance.Material3.TitleSmall"/>
+
+            <!-- ====== RESUMEN INICIAL ====== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/inicio_lote_ceba"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleSmall"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="14dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_info_group"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <!-- Fila -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/peso"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="9,600 kg"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/edad"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="40 meses"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/cantidad"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="32 cabezas"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/fecha_meta_embarque"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="Enero 2026"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ====== RESUMEN FINAL ====== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/final_lote_ceba"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.TitleSmall"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="14dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_info_group"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/peso"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="12,800 kg"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/edad"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="40 meses"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/cantidad"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="32 cabezas"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:layout_marginVertical="8dp" android:background="#22000000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:layout_width="0dp" android:layout_weight="1"
+                                android:text="@string/fecha"/>
+                            <TextView style="@style/TextAppearance.Material3.BodyMedium"
+                                android:text="Junio 2026"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Botón volver -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_volver"
+                style="@style/Hato.PillButton.Navy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/volver_a_mi_ganado"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_bottom_nav_top_rounded"
+        app:menu="@menu/menu_main"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

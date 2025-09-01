@@ -18,7 +18,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="#26344D">
+            android:background="@drawable/bg_header_rounded">
 
             <TextView
                 android:id="@+id/title_brand"
@@ -30,7 +30,7 @@
                 android:shadowDx="0"
                 android:shadowDy="3"
                 android:shadowRadius="4"
-                android:text="@string/HATODATO"
+                android:text="@string/hatodato"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="65dp"
-            android:text="@string/ingrese_el_tipo_de_usuario_que_desea"
+            android:text="Ingrese el tipo de usuario que desea"
             android:textColor="?attr/colorOnSurface" />
 
         <!-- CARD: GANADERO -->
@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="@string/vendedor"
+                    android:text="Vendedor"
                     android:textAllCaps="true"
                     android:textColor="?attr/colorOnSurface"
                     android:textStyle="bold" />
@@ -167,7 +167,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="0.7"
+                android:alpha="0.8"
                 android:text="@string/tu_mejor_compa_ero_con_bovinos"
                 android:textColor="?attr/colorOnSurface"
                 style="@style/TextAppearance.Material3.BodySmall"/>

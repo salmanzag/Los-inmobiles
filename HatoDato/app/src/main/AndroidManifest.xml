@@ -12,6 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HatoDato">
         <activity
+            android:name=".crear_product_marketplace"
+            android:exported="false" />
+        <activity
+            android:name=".calendar_hatodato"
+            android:exported="false" />
+        <activity
+            android:name=".Registro_ceba"
+            android:exported="false" />
+        <activity
+            android:name=".analitic_lote_ceba"
+            android:exported="false" />
+        <activity
+            android:name=".exit_lote_ceba_resumen"
+            android:exported="false" />
+        <activity
+            android:name=".Mexit_salida_ceba_form"
+            android:exported="false" />
+        <activity
+            android:name=".exit_lote_ceba"
+            android:exported="false" />
+        <activity
+            android:name=".new_lote_ceba"
+            android:exported="false" />
+        <activity
+            android:name=".ceba_lotes"
+            android:exported="false" />
+        <activity
+            android:name=".marketplace_home"
+            android:exported="false" />
+        <activity
             android:name=".registrar_ganado"
             android:exported="false" />
         <activity
